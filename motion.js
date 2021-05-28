@@ -12,3 +12,19 @@ function myMove() {
 		  clearInterval(id);
   }
 }
+
+function blue() {
+  var elem = document.getElementById("blueblock");   
+  var posTop = 0;
+  var posRight = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+	  posTop++;
+	  posRight++;
+	  elem.style.top = posTop + "px"; 
+	  elem.style.right = posRight + "px"; 
+	  if ((posTop == 350) && (posRight == 350))
+		  clearInterval(id);
+  }
+}
+
